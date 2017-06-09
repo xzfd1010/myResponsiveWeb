@@ -5,11 +5,16 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Title</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--build:css css/combined.css-->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/vendor/OwlCarousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/vendor/OwlCarousel2/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <!--endbuild-->
 </head>
+
 <body>
-<!--[if lte IE8]>
+<!--[if lte IE 8]>
 <p class="browserupgrade">您的浏览器版本老的可笑，请到<a href="http://browsehpppy.com/"> 这里</a> 更新，以获取最佳的体验</p>
 <![endif]-->
 
@@ -36,8 +41,8 @@
     </nav>
 </header>
 <div class="container">
-    <div class="transaction">
-        <div class="trans-content">
+    <div class="transaction clearfix">
+        <div class="trans-content center-block">
             <div class="trans-data">
                 <span>平台累计成交金额</span>
                 <span class="trans-money">19888</span>
@@ -54,9 +59,31 @@
         </div>
     </div>
     <div class="ad">
-        <div class="item"><img src="img/ad001.png" alt=""></div>
-        <div class="item"><img src="img/ad002.png" alt=""></div>
-        <div class="item"><img src="img/ad003.png" alt=""></div>
+        <!--主体样式-->
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <!--能够忽略dpr-->
+                <picture>
+                    <source srcset="img/ad001-l.png" media="(min-width:50em)">
+                    <source srcset="img/ad001-m.png" media="(min-width:30em)">
+                    <img src="img/ad001.png" alt="2015年度报告">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source srcset="img/ad002-l.png" media="(min-width:50em)">
+                    <source srcset="img/ad002-m.png" media="(min-width:30em)">
+                    <img src="img/ad002.png" alt="新年红包">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source srcset="img/ad003-l.png" media="(min-width:50em)">
+                    <source srcset="img/ad003-m.png" media="(min-width:30em)">
+                    <img src="img/ad003.png" alt="新手秘籍">
+                </picture>
+            </div>
+        </div>
     </div>
     <section class="feature">
         <div class="item">
@@ -216,5 +243,11 @@
     </ul>
     <p>北京某互联网金融公司 版权所有 ® 2015-2016</p>
 </footer>
+<script src="//cdn.bootcss.com/jquery/1.12.2/jquery.min.js"></script>
+<!--build:js js/combined.js-->
+<script src="js/vendor/OwlCarousel2/owl.carousel.min.js"></script>
+<script src="js/vendor/picturefill.min.js"></script>
+<script src="js/main.js"></script>
+<!--endbuild-->
 </body>
 </html>

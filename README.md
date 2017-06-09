@@ -1,11 +1,12 @@
-markdown——标记语言
+#  A responsive page
 
-# Hello 
-## 二级标题
+> 根据慕课网课程制作的响应式页面
 
-> 引用的一段名言
+## Build Setup
 
-[百度](http://www.baidu.com)
-
-![Google Logo](https://www.google.com.hk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png)
-
+```
+ #install dependencies
+ npm install
+ 
+ #
+```

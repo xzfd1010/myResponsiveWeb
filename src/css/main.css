@@ -157,7 +157,7 @@ header .top ul li + li {
     /*inline-block，html元素中的空白字符，换行符导致的，-3px，浏览器不同也不一样*/
     /*li不闭合也可以解决*/
     /*css4草案中的属性，white-space-collapsing支持去除这个空白符*/
-    margin-left: -3px;
+    margin-left: -4px;
 }
 
 /*inline-block撑开元素*/
@@ -350,7 +350,7 @@ header .main ul li a {
 /* 滚动广告 */
 
 .ad {
-    display: none;
+    /*display: none;*/
 }
 
 /* 平台特点 */
@@ -368,7 +368,7 @@ header .main ul li a {
     /*inline-block 1/3，3等分*/
     /*item本身有padding，2rem，然后margin-left:1.5rem，总共3rem／3=1rem*/
     /*这样item不会换行*/
-    width: calc(33.33333333333% - 3rem);
+    width: calc(33.33333% - 3rem);
     padding: 1rem;
     font-size: 1.4rem;
     background-color: #fff;
@@ -595,7 +595,7 @@ header .main ul li a {
 
 .product .product-content .item .buy {
     float: left;
-    width: calc(22% - 4.2rem);
+    width: calc(22% - 4.3rem);
     padding: 1rem;
 }
 
