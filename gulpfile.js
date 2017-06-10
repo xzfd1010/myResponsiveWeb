@@ -20,6 +20,9 @@ var uglify = require('gulp-uglify');
 //压缩时，*!的注释不会消失
 //老的版本文件不会删除，因为发布的时候用户可能正在访问网页，没有更新
 var csso = require('gulp-csso');
+// 部署到github-pages
+var ghPages = require('gulp-gh-pages');
+
 
 gulp.task('default', function () {
     //声明filter
@@ -55,3 +58,9 @@ gulp.task('default', function () {
         //文件流结束了，把文件流扔到dist文件夹下
         .pipe(gulp.dest('dist'));
 });
+
+gulp.task('deploy', function() {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+});
+
